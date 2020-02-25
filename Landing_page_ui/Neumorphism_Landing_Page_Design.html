@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page Design Neumorphism Effect</title>
+    <!--=================-Fontawesome icon-============================-->
+    <link rel="stylesheet" href="css/Fontawesome.css">  
+    <!--=================-Google Fonts Poppins-============================-->  
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<section>
+
+  <div class="container">
+        <div class="caption">
+
+            <nav class="navbar">
+
+                <div class="header">
+
+                    <div class="navbar-header">
+                        <a class="logo" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="m_button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li>Products</li>
+                        <li>Solutions</li>
+                        <li>Pricing</li>
+                        <li>Integration</li>
+                        <li>Contact Us</li>
+                    </ul>
+
+                    <ul class="nav navbar-nav Contact">
+                        <li><a href="#"><i class="fa fa-lock"></i>Login</a></li>
+                        <li class="sign"><a href="#">Sign up</a></li>
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="main">
+                <div class="content">
+                   <h1> Landing <span> Page</span>
+                        Web Design <span>Neumorphism</span>
+                        Using <span>HTML CSS</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ullam rem ad blanditiis modi reprehenderit minima. Iure,
+                         velit quis at reprehenderit dicta alias pariatur officiis vero sunt,
+                         eveniet, aliquam voluptatem tenetur!
+                    </p>  
+                    <a href="#">Get Started for free</a>  
+                </div>
+                <div class="image">
+                    <img src="img/office.svg">
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="media">
+                    <h2>Follow with me</h2>
+                    <div class="social">
+                    <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                    <div><a href="#"><i class="fab fa-dribbble"></i></a></div>
+                    <div><a href="#"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+  </div>
+
+</section>
+<script src="js/jquery.js"></script>
+<script>
+    $(".m_button").click(function (){
+        $('body').toggleClass("active");
+    });
+
+
+    const btn = document.querySelector('.m_button');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', ()=>{
+        nav.classList.toggle('active');
+    })
+</script>
+
+</body>
+</html>
